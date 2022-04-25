@@ -15,7 +15,17 @@ public class ParkingLotTest {
     //UC1 = Ability To Park vehicle
     @Test
     public void givenVehicle_WhenParked_ShouldReturnTrue() {
-        boolean isParked = parkingLot.vehicleParking("alto");
+        Vehicle vehicle = new Vehicle("alto");
+        boolean isParked = parkingLot.vehicleParking(vehicle);
         Assert.assertTrue(isParked);
+    }
+
+    //UC2 = Ability To unPark vehicle
+    @Test
+    public void givenVehicle_WhenUnParked_ShouldReturnTrue() {
+        Vehicle vehicle = new Vehicle("alto");
+        parkingLot.vehicleParking(vehicle);
+        boolean isUnParked = parkingLot.vehicleUnparking(vehicle);
+        Assert.assertTrue(isUnParked);
     }
 }

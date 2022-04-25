@@ -1,9 +1,9 @@
 package com.blz;
 
 public class ParkingLot {
-    private String vehicle;
+    private Vehicle vehicle;
 
-    public boolean vehicleParking(String vehicle) {
+    public boolean vehicleParking(Vehicle vehicle) {
         if (this.vehicle != null) {
             return false;
         } else {
@@ -11,4 +11,16 @@ public class ParkingLot {
             return true;
         }
     }
+
+    public boolean vehicleUnparking(Vehicle vehicle) {
+        if (this.vehicle == null) {
+            return false;
+        }
+        if (this.vehicle.equals(vehicle)) {
+            vehicle = null;
+            return true;
+        }
+        return false;
+    }
+
 }
