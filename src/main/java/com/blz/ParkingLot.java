@@ -10,7 +10,6 @@ public class ParkingLot {
     /**
      * @Purpose : To park the vehicle
      * @Param : vehicle
-     * @Return : NA
      */
 
     public void vehicleParking(Vehicle vehicle) throws ParkingLotException {
@@ -21,7 +20,6 @@ public class ParkingLot {
     /**
      * @Purpose : To unPark the vehicle
      * @Param : vehicle
-     * @Return : NA
      */
     public void vehicleUnparking(Vehicle vehicle) throws ParkingLotException {
         if (this.vehicle == null)
