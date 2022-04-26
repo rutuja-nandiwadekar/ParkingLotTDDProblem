@@ -2,7 +2,11 @@ package com.blz;
 
 public class ParkingLot {
     private Vehicle vehicle;
-
+    /**
+     * @Purpose : To park the vehicle
+     * @Param : vehicle
+     * @Return : Returns boolean value true or false
+     */
     public boolean vehicleParking(Vehicle vehicle) {
         if (this.vehicle != null) {
             return false;
@@ -11,7 +15,11 @@ public class ParkingLot {
             return true;
         }
     }
-
+    /**
+     * @Purpose : To unPark the vehicle
+     * @Param : vehicle
+     * @Return : Returns boolean value true or false
+     */
     public boolean vehicleUnparking(Vehicle vehicle) {
         if (this.vehicle == null) {
             return false;
