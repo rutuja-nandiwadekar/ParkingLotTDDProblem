@@ -3,6 +3,7 @@ package com.blz;
 public class ParkingLot {
     private Vehicle vehicle;
     public static Owner owner = new Owner();
+    public SecurityPersonal securityPersonal = new SecurityPersonal();
 
     /**
      * @Purpose : To park the vehicle
@@ -16,6 +17,7 @@ public class ParkingLot {
         if(this.vehicle != null){
             String message = "Parking lot is full";
             owner.update(message);
+            securityPersonal.update(message);
         }
     }
     /**
