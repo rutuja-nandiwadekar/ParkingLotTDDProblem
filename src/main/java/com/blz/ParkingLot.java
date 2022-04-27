@@ -29,6 +29,7 @@ public class ParkingLot {
             throw new ParkingLotException("lot is empty");
         if (this.vehicle .equals(vehicle)){
             this.vehicle = null;
+            owner.update("Parking lot has space");
             return;
         }
         throw new ParkingLotException("Please ask correct vehicle");
